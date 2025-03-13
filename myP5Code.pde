@@ -4,6 +4,8 @@ setup = function() {
     background(255,255,255,0);
     drawFish(200 ,200, color(200,0,200)); 
     drawFish(250 ,300, color(0,200,200));
+    drawStar(300, 250,color(200,180,160))
+    drawSeaweed(200 ,100, color(0,200,200));
 };
 
 //🟡drawFish Function
@@ -12,6 +14,18 @@ var drawFish = function(fishX, fishY, fishColor){
   fill(fishColor);
   text("𓆝", fishX, fishY);  
   };
+  
+var drawStar = function(starX, starY, starColor){
+textSize(size)
+fill(starcolor)
+text("𓇼",starX, starY);
+}
+
+var drawSeaweed = function(seaweedX, seaweedY, seaweedColor){
+textSize(80)
+fill(seaweedcolor)
+text("🪸",seaweedX, seaweedY);
+}
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
